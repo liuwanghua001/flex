@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置则轴上的子元素排列方式（多行）对于单行是没有效果的</title>
+    <style>
+        div{
+            width:80%;
+            height:500px;
+            background:#090;
+            border:1px solid #090;
+            display:flex;
+            /* 换行 */
+            flex-wrap:wrap;
+            /* 因为有了换行，出现多行，侧轴上控制子元素的对齐方式我们用
+            align-content */
+            /* align-content:flex-start; */
+            /* 多行的盒子全都居中对齐，垂直居中 */
+            /* align-content:center; */
+            /* 上下两边紧贴，中间会空出来 */
+            align-content:space-between;
+           
+        }
+        div span{
+            width:150px;
+            height:150px;
+            background:#fff;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+    
+</body>
+</html>

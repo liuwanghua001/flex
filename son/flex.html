@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        section{
+            width:60%;
+            height:150px;
+            background:#090;
+            margin:0 auto;
+            display:flex;
+        }
+        section div:nth-child(1){
+            width:100px;
+            height:150px;
+            background:pink;
+        }
+        section div:nth-child(2){
+            flex:1;
+            background:brown;
+        }
+        section div:nth-child(3){
+            width:100px;
+            height:150px;
+            background:pink;
+        }
+        strong{text-align:center;display:block;margin:10px 0;color:#f60;}
+        p{
+            width:60%;
+            height:150px;
+            background:#090;
+            margin:100px auto;
+            display:flex;
+        }
+        p span{
+            flex:1;
+        }
+        p span:nth-child(2){
+            flex:2;
+            background:blue;
+        }
+    </style>
+</head>
+<body>
+    <strong>flex属性定义子项目分配剩余空间，用flex来表示占多少份数</strong>
+    <br/>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+    <p>
+        <span>11</span>
+        <span>22</span>
+        <span>33</span>
+    </p>
+</body>
+</html>

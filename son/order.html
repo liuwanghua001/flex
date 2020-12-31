@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        div{
+            display:flex;
+            width:80%;
+            height:300px;
+            background:#090;
+            /* 让三个子盒子沿着侧轴底侧对齐 */ 
+            /* align-items: flex-end; */
+
+           
+
+        }
+        div span{
+            width:150px;
+            height:100px;
+            background:purple;
+            
+        }
+        
+        div span:nth-child(3){
+             /* 只要3号盒子侧轴下来 底侧对齐 */
+             align-self:flex-end;
+             /* 值越小越靠前 */
+             order:-1;
+        }
+    </style>
+</head>
+<body>
+    <strong>数值越小，排列越靠前，默认为0</strong>
+    <strong>注意：和z-index不一样</strong>
+    <br/>    
+    <div>
+        <span>11</span>
+        <span>22</span>
+        <span>33</span>
+    </div>
+</body>
+</html>

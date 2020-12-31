@@ -1,0 +1,41 @@
+body{
+    font:400 16px/1.5 PingFangSC-regular,Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+    max-width:540px;
+    min-width: 320px;
+    margin:0 auto;
+    color:#000;
+    background:#f2f2f2;
+    overflow-x:hidden;
+    -webkit-tap-highlight-color:transparent;
+}
+/* 搜索模块 */ 
+.search-index{
+    position:fixed;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
+    width:100%;
+    min-width:320px;
+    max-width:540px;
+    height:44px;
+    background:#000;
+    display:flex;
+}
+.search{
+    flex:1;
+}
+.user{
+    width:44px;
+    height:44px;
+    background:purple;
+    font-size:12px;
+}
+.user::before{
+    content:"";
+    display:block;
+    width:23px;
+    height:23px;
+    background:url("../images/home-common-sprite2x@v7.15.png") 1px -36px no-repeat;
+    background-size:21px auto;
+}

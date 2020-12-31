@@ -8,6 +8,11 @@ body{
     overflow-x:hidden;
     -webkit-tap-highlight-color:transparent;
 }
+a{ text-decoration:none;}
+div{box-sizing:border-box;}
+ul li{list-style:none;}
+
+
 /* 搜索模块 */ 
 .search-index{
     position:fixed;
@@ -18,24 +23,75 @@ body{
     width:100%;
     min-width:320px;
     max-width:540px;
-    height:44px;
-    background:#000;
+    height:44px;    
     display:flex;
 }
 .search{
     flex:1;
+    height:28px;
+    border:1px solid #CCC;
+    margin:8px 10px;
+    border-radius:5px;
+    padding-left:30px;
+    color:#fff;
+    font-size:12px;
+    line-height:28px;
+}
+.search::before{
+    content:"";
+    position:absolute;
+    top:7px;
+    left:5px;   
+    width: 35px;
+    height: 100%;
+    background:url("../images/home-common-sprite2x@v7.15.png") 15px 7px no-repeat;;
+    background-size: 21px auto;    
 }
 .user{
-    width:44px;
-    height:44px;
-    background:purple;
+    width:51px;
+    height:44px;    
     font-size:12px;
+    text-align:center;
+    color:#2eaae0;   
 }
 .user::before{
     content:"";
     display:block;
-    width:23px;
-    height:23px;
+    width:22px;
+    height:22px;
     background:url("../images/home-common-sprite2x@v7.15.png") 1px -36px no-repeat;
     background-size:21px auto;
+    margin:5px auto 0;  
+    display: block;
+}
+
+/*focus*/
+.focus{
+    
+}
+.focus img{
+    width:100%;
+}
+
+.local-nav{
+    height:64px;
+    background:#fff;
+    margin:3px 4px;
+    border-radius:8px;
+    display:flex;
+}
+.local-nav li{
+    flex:1;
+}
+.local-nav a{
+    display:flex;
+    /*主轴设置为了y轴*/
+    flex-direction:column;
+    /*侧轴居中对齐*/
+    align-items:center;
+}
+.local-nav-icon{
+    width:32px;
+    height:32px;
+    background:red;
 }

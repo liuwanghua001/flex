@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置则轴上的子元素排列方式（单行）</title>
+    <style>
+        div{
+            width:80%;
+            height:300px;
+            background:#090;
+            border:1px solid #090;
+            display:flex;
+            /* 默认的主轴是x轴 row ,当前沿主轴居中对齐*/
+            justify-content:center;
+
+            /* 需要做一个侧轴居中对齐 */
+            /* align-items:center; */
+            /* 侧轴上对齐 */
+            /* align-items:flex-start; */
+            /* 拉伸，但是子盒子不要给高度 */
+            align-items:stretch;
+           
+        }
+        div span{
+            width:150px;
+            /* height:150px; */
+            background:#fff;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        
+    </div>
+    
+</body>
+</html>

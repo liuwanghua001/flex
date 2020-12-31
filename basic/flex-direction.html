@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>设置主轴方向</title>
     <style>
         div{
             width:80%;
             height:300px;
             background:#090;
+            border:1px solid #090;
             display:flex;
-            /* 平均分布 */
-            justify-content:space-around;
+
+            /* 我们的元素是跟着主轴来排列的90  */
+            /* flex-direction:row; */
+
+            /* 右对齐并且盒子的排列顺序相反 */
+            flex-direction:row-reverse;
+
+            /* 把主轴设置为y轴，那么x轴就成了侧轴, 默认是从上到下*/
+            /* flex-direction:column; */
+            /* 从下到上排列 */
+            flex-direction:column-reverse;
         }
         div span{
             width:150px;

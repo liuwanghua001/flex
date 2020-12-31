@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>设置主轴方向</title>
     <style>
         div{
             width:80%;
             height:300px;
             background:#090;
+            border:1px solid #090;
             display:flex;
-            /* 平均分布 */
-            justify-content:space-around;
+            /* flex布局中，默认的子元素是不换行的，如果装不开
+            会缩小子元素的宽度，放到父元素里面 */
+            /* flex-wrap:nowrap; */
+            /* 一行装不下，就换行 */
+            flex-wrap:wrap;
+           
         }
         div span{
             width:150px;
@@ -26,6 +31,9 @@
         <span>1</span>
         <span>2</span>
         <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
     </div>
     
 </body>
